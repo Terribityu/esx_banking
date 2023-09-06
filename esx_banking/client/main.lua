@@ -259,7 +259,7 @@ RegisterNUICallback('checkPincode', function(data, cb)
                 success = true
             })
             ESX.ShowNotification(TranslateCap('pincode_found'), "success")
-        else if trypassword == 2 then
+        elseif trypassword == 2 then
             cb({
                 error = true
             })
@@ -269,7 +269,7 @@ RegisterNUICallback('checkPincode', function(data, cb)
                 error = true
             })
             ESX.ShowNotification(TranslateCap('pincode_not_found'), "error")
-            trypassword++
+            trypassword = trypassword + 1
         end
     end, data)
 end)
