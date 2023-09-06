@@ -2,7 +2,7 @@
 Modified version of esx_banking that allows user to have an MasterCard item for ATM
 
 This only supports ox_inventory
-Put this on your ox_inventory
+Put this on your @ox_inventory/data/items
 ```
 ['mastercard'] = {
 		label = 'Mastercard',
